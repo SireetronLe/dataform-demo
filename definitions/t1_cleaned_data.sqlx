@@ -1,6 +1,6 @@
 config {
   type: "table",  
-  schema: "Demo"
+  schema: "social_sentiment"
 }
 
 SELECT
