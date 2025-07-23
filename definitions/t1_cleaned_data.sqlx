@@ -1,0 +1,10 @@
+config {
+  type: "table",  
+  schema: "social_sentiment"
+}
+
+SELECT
+platform,post_type,likes,comments,shares,sentiment_score
+FROM
+  `database-test-466014.Demo.socia`
+where post_time >= '2023-01-01' 

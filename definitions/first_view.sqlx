@@ -4,6 +4,7 @@ config {
 }
 
 SELECT
-*
+count(sentiment_score),sentiment_score
 FROM
   `database-test-466014.Demo.socia`
+group by sentiment_score
