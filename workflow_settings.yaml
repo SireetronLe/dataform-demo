@@ -1,5 +1,5 @@
-defaultProject: decent-stacker-466010-k2
-defaultLocation: asia-southeast1
+defaultProject: database-test-466014
+defaultLocation: US
 defaultDataset: dataform
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
