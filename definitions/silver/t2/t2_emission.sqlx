@@ -1,0 +1,8 @@
+config {
+  type: "table",  
+  schema: "silver_t2"
+
+}
+
+select sum(pm25),sum(pm10),sum(co),tam_code,lu_code
+ from  ${ref('t1_emission')}

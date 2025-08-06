@@ -1,0 +1,10 @@
+config {
+  type: "table",  
+  schema: "silver_t1"
+
+}
+
+SELECT
+date_time,lu_code,tam_code,pm25,pm10,co
+FROM
+  `database-test-466014.Demo.emission`

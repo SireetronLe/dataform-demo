@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+"@dataform/core@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/@dataform/core/-/core-3.0.0.tgz"
+  integrity sha512-MORO8ADZkkPfAHH0S/jb3o/6HOYT4klw+hCgyHkNInFTnIYAN+zzgHc9++FrtXNyer0MvnZ351XTBveIVw7tcg==

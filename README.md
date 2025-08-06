@@ -1,0 +1,7 @@
+
+workflow_settings.yaml
+defaultProject: database-test-466014
+defaultLocation: US
+defaultDataset: dataform
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.0
