@@ -1,0 +1,13 @@
+config {
+  type: "table",  
+  schema: "silver_t1"
+
+}
+
+select date_time,stationid,pm25 as value , 'pm25' as parameter from `database-test-466014.Demo.concentration`
+union all
+select date_time,stationid,pm10 as value , 'pm10' as parameter  from `database-test-466014.Demo.concentration`
+union all
+select date_time,stationid,co as value , 'co' as parameter  from `database-test-466014.Demo.concentration`
+union all
+select date_time,stationid,aqi as value , 'aqi' as parameter  from `database-test-466014.Demo.concentration`

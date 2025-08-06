@@ -2,6 +2,7 @@ config {
   type: "table",  
   schema: "silver_t1"
 
+
 }
 
 SELECT

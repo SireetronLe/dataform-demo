@@ -1,0 +1,7 @@
+config {
+  type: "table",  
+  schema: "gold"
+
+}
+
+select * from ${ref('t3_concentration')}

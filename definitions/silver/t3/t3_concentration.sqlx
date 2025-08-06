@@ -1,0 +1,21 @@
+config {
+    type: "table",
+    schema: "silver_t3"
+}
+
+SELECT
+  t1.date_time,
+  t1.stationid,
+  t1.value,
+  t1.parameter,
+  t2.name_th AS station_name,
+  t2.area_th AS area_name,
+  t2.station_type AS station_type,
+  t2.lat AS lat,
+  t2.lng AS lng
+FROM
+  ${ref('t1_concentration')} AS t1
+LEFT JOIN
+  `database-test-466014.Demo.station` AS t2
+ON
+  t1.stationid = t2.station_id
