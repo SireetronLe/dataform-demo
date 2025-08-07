@@ -4,14 +4,15 @@ config {
 }
 
 SELECT
-  t2.pm25,
-  t2.pm10,
-  t2.co,
+  t2.date_time,
+  t2.value,
+  t2.parameter,
   t2.tambon_code,
   tb.tam_nam_t as tambon_name,
   tb.amphoe_t as amphoe_name,
   tb.prov_nam_t as province_name,
-  t2.landuse_code
+  t2.landuse_code,
+  tb.geometry
 FROM
   ${ref('t2_emission')} as t2
 LEFT JOIN

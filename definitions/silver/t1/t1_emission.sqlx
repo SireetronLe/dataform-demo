@@ -1,11 +1,32 @@
 config {
-  type: "table",  
-  schema: "silver_t1"
-
+    type: "table",
+    schema: "silver_t1"
 
 }
 
 SELECT
-date_time,lu_code,tam_code,pm25,pm10,co
+  date_time,
+  lu_code,
+  tam_code,
+  pm25 AS value,
+  'pm25' AS parameter
+FROM
+  `database-test-466014.Demo.emission` 
+  UNION all
+SELECT
+  date_time,
+  lu_code,
+  tam_code,
+  pm10 AS value,
+  'pm10' AS parameter
+FROM
+  `database-test-466014.Demo.emission` 
+  UNION all
+SELECT
+  date_time,
+  lu_code,
+  tam_code,
+  co AS value,
+  'co' AS parameter
 FROM
   `database-test-466014.Demo.emission`

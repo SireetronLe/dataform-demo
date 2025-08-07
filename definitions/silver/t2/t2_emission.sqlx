@@ -3,6 +3,6 @@ config {
   schema: "silver_t2"
 }
 
-select sum(pm25) as pm25,sum(pm10) as pm10 ,sum(co) as co,tam_code as tambon_code,lu_code as landuse_code
+select date_time , value,parameter,tam_code as tambon_code,lu_code as landuse_code
  from  ${ref('t1_emission')}
- group by tam_code,lu_code
+
